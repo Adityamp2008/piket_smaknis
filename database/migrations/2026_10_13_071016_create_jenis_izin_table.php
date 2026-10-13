@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('jenis_izin', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('jenis_izin')->constrained('izin_id')->onDelete('cascade'); 
             $table->string('nama_izin');
             $table->timestamp('waktu')->useCurrent();
             $table->timestamps();
