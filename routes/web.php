@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guru\GuruController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,7 +34,7 @@ Route::get('/', function () {
 
 
 //===== INI UNTUK PENGATURAN GURU ====
-
+Route::get('/guru/dahsboard', [GuruController::class, 'index'])->name('guru.dashboard');
 
 
 //===== INI UNTUK PENGATURAN GURU ====
