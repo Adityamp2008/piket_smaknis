@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string('nama');
             $table->enum('jenis_kelamin', ['L', 'P']);
             $table->date('tanggal_lahir');
-            $table->varchar('nip', 18);
-            $table->varchar('nik', 16);
+            $table->string('nip', 18);
+            $table->string('nik', 16);
             $table->text('alamat');
-            $table->varchar('email', 50);
+            $table->string('email', 50);
             $table->timestamps();
         });
     }
