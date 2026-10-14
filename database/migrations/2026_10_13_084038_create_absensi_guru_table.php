@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('guru_id')->constrained('guru')->onDelete('cascade');
             $table->date('tanggal');
-            $table->string('status')->default('Hadir');
+            $table->string('status')->default('Hadir'); 
             $table->string('alasan')->nullable();
 
             $table->timestamps();
