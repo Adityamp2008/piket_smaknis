@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Guru\GuruController;
+use App\Http\Controllers\Admin\GuruController as AdminGuruController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,6 +22,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', function () {
         return view('pages.Admin.dashboard');
     })->name('dashboard');
+
+    Route::resource('guru', AdminGuruController::class);
 });
 
 // ==== AKHIR DARI PENGATURAN ADMIN ====
