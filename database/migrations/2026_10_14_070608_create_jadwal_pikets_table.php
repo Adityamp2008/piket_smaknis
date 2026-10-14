@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('petugas_id');
             $table->string('hari');
-            $table->string('jam_mulai');
-            $table->string('jam_selesai');
+            $table->time('jam_mulai');
+            $table->time('jam_selesai');
             $table->timestamps();
         });
     }
