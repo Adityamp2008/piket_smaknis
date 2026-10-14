@@ -22,14 +22,14 @@ return new class extends Migration
             $table->text('alamat');
             $table->string('email', 50);
             $table->timestamps();
-        });
+        });                                                                                                                                 
     }
-
+                                                                                      
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('guru');
+        Schema::dropIfExists('guru');                                
     }
 };
