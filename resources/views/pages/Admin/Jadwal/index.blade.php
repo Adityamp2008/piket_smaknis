@@ -1,2 +1,2 @@
-<h1>Jadwal Piket</h1>
-   @forelse ($)
+<h1>{{ $jadwal }}</h1>
+   

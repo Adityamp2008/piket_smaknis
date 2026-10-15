@@ -1,1 +1,1 @@
-<h1>{{ $ppetugas}}</h1>
+<h1>{{ $petugas}}</h1>
