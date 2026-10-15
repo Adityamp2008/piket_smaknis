@@ -13,8 +13,8 @@ class GuruController extends Controller
      */
     public function index()
     {
-        $guru = Guru::all();
-        return view('pages.admin.guru.index', compact('guru'));
+      $guru = Guru::all();
+      return view('pages.admin.guru.index', compact('guru'));
     }
 
     /**
