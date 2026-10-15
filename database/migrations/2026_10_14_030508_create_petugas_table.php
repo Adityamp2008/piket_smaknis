@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('petugas', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('users')->constrained('users')->onDelete('cascade');
+            $table->foreignID('users_id')->constrained('users')->onDelete('cascade');
             $table->string('nama');
             $table->enum('jenis kelamin',['L', 'P']);
             $table->date('tanggal_lahir');
