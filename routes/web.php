@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Guru\GuruController;
 use App\Http\Controllers\Admin\GuruController as AdminGuruController;
+use App\Http\Controllers\Admin\JadwalController as AdminJadwalPiketController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     })->name('dashboard');
 
     Route::resource('guru', AdminGuruController::class);
+    Route::resource('jadwal-piket', AdminJadwalPiketController::class);
 });
 
 // ==== AKHIR DARI PENGATURAN ADMIN ====
