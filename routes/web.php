@@ -3,6 +3,7 @@
 use App\Http\Controllers\Guru\GuruController;
 use App\Http\Controllers\Admin\GuruController as AdminGuruController;
 use App\Http\Controllers\Admin\PetugasController as AdminPetugasController;
+use App\Http\Controllers\Admin\KelasController as AdminKelasController;
 
 
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
     Route::resource('guru', AdminGuruController::class);
     Route::resource('petugas', AdminPetugasController::class);
+    Route::resource('kelas', AdminKelasController::class);
 });
 
 // ==== AKHIR DARI PENGATURAN ADMIN ====
