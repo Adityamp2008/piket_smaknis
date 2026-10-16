@@ -1,1 +1,1 @@
-<h1>{{ $jurusan }}</h1>
+<h1>{{ $Jurusan }}</h1>
