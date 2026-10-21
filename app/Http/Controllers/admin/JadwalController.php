@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\JadwalPiket;
+use App\Models\jadwal_pikets;
 
 class JadwalController extends Controller
 {
@@ -13,8 +13,8 @@ class JadwalController extends Controller
      */
     public function index()
     {
-        $jadwal = JadwalPiket::all();
-        return view ('admin.jadwal.index', compact ('jadwal'));
+        $jadwal = jadwal_pikets::all();
+        return view ('pages.admin.jadwal.index', compact ('jadwal'));
     }
 
     /**
@@ -22,7 +22,7 @@ class JadwalController extends Controller
      */
     public function create()
     {
-        return view ('admin.jadwal.create');
+        return view ('pages.admin.jadwal.create');
     }
 
     /**

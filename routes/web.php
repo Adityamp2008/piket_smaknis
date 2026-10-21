@@ -30,7 +30,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         return view('pages.Admin.dashboard');
     })->name('dashboard');
     Route::resource('guru', AdminGuruController::class);
-    Route::resource('jadwal-piket', AdminJadwalPiketController::class);
+    Route::resource('jadwal_pikets', AdminJadwalPiketController::class);
     Route::resource('petugas', AdminPetugasController::class);
     Route::resource('kelas', AdminKelasController::class);
     Route::resource('jurusan', AdminJurusanController::class);

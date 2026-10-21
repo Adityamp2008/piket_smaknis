@@ -1,3 +1,6 @@
+
+<h1>{{ $data }}</h1>
+
 @extends('layouts.admin', ['activeMenu' => 'dashboard'])
 
 @section('title', 'Dashboard Admin')
@@ -28,3 +31,4 @@
     </div>
   </div>
 @endsection
+
