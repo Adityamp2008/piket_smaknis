@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\JadwalController as AdminJadwalPiketController;
 use App\Http\Controllers\Admin\PetugasController as AdminPetugasController;
 use App\Http\Controllers\Admin\KelasController as AdminKelasController;
 use App\Http\Controllers\Admin\JurusanController as AdminJurusanController;
+use App\Http\Controllers\Admin\AbsensiGuruController as AdminAbsensiguruController;
 
 
 
@@ -33,6 +34,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('petugas', AdminPetugasController::class);
     Route::resource('kelas', AdminKelasController::class);
     Route::resource('jurusan', AdminJurusanController::class);
+    Route::resource('absensiguru', AdminAbsensiGuruController::class);
 });
 
 // ==== AKHIR DARI PENGATURAN ADMIN ====

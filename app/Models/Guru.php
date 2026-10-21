@@ -15,4 +15,6 @@ class Guru extends Model
         'no_telp',
         'alamat',
     ];
+
+
 }
