@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nama');
             $table->enum('jenis kelamin',['L', 'P']);
             $table->date('tanggal_lahir');
-            $table->string('nip', 18);
+            $table->string('nip', 20);
             $table->string('email');
             $table->timestamps();
         });
